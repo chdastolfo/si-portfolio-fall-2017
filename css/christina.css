@@ -1,6 +1,5 @@
 body{
-    background-image: url('../img/background.jpg');
-    color: #fff;
+    color: black;
 }
 
 .sister {
@@ -41,7 +40,7 @@ body{
 
 @keyframes flash {
     from {color: #7FFF00;}
-    to {color: #fff;}
+    to {color: purple;}
 }
 
 /* Make it move */
