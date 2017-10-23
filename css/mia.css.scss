@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+$body-bg: #EDDFFF;
+$jumbotron-bg: white;
+$navbar-height: 45px;
+$navbar-default-bg: #9b59b6;
+$navbar-default-link-color: white;
+$brand-primary: #8e44ad;
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+
+.center {
+     text-align: center;
+}
+.navbar-default .nav {
+  font-family: 'Pacifico';
+}
+.navbar-brand {
+     font-family: 'Pacifico';
+     font-weight: bold;
+}
+.btn-primary, .btn-primary:visited {
+    background-color: #FFCDF6 !important;
+    border-color: transparent;
+    font-family: 'Pacifico';
+}
+.btn-default, .btn-default:visited {
+    color: #FFCDF6 !important;
+    border-color: transparent;
+    font-family: 'Pacifico';
+}
+.btn-primary:hover {
+  background-color: #FFA8EF !important;
+  border-color: transparent;
+}
+.panel-heading {
+  background-color: #FFCDF6 !important;
+  color: white !important;
+  font-family: 'Pacifico';
+}
+.panel-footer {
+  background-color: #A6F7FF !important;
+  height: 67px !important;
+}
