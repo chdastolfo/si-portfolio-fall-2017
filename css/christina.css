@@ -1,18 +1,13 @@
 body{
-    background-image: url();
-    color: #;
+    background-image: url('../img/background.jpg');
+    color: #fff;
 }
 
 .sister {
     border-radius: 90%;
     zoom: 0.5;
 }
-.me {
-    border-radius: 90%;
-    zoom: .3;
-    height: 480px;
-    width: 480px;
-}
+
 .zelda {
     zoom: 0.5;
 }
