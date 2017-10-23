@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>pxlSite</title>
 
     <!-- Bootstrap -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/mia.css">
+    <link rel="stylesheet" href="css/mia.css.scss">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -18,13 +19,37 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
-    <div class="container">
 
+  <body>
+    <nav class="navbar navbar-static-top navbar-default" role="navigation">
+      <div class= "container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="Mia Belmont">Mia Belmont</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="Home">Home</a> </li>
+          <li><a href="About">About</a> </li>
+
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+    </nav>
+
+    <div class="container">
         <div class="row">
             <div class="col-sm-offset-1 col-sm-4">
               <div class="box panel panel-default">
-                <div class="panel-heading">About Me</div>
+                <div id= "panel-heading" class="panel-heading">About Me</div>
                 <div class="panel-body">
               I'm a recently graduated Computer Science and Environmental Studies Bachelor of Science
               who hopes to use programming to protect the environment and make the world a better place!
@@ -38,7 +63,6 @@
                     </div>
                   <div id="footer" class="panel-footer">
                     <div id = "btn" class="col-sm-offset-2 col-sm-4">
-                    <%= link_to "My Resume", "/resume.pdf", :class => "class: btn btn-primary btn-lg" %>
                     </div>
                   </div>
                   </div>
@@ -46,7 +70,6 @@
 
     </div>
     </div>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
