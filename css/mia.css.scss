@@ -1,43 +1,83 @@
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
-$body-bg: #EDDFFF;
 $jumbotron-bg: white;
 $navbar-height: 45px;
 $navbar-default-bg: #9b59b6;
-$navbar-default-link-color: white;
 $brand-primary: #8e44ad;
-@import 'bootstrap-sprockets';
-@import 'bootstrap';
-@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");
+@import 'bootstrap-sprockets'
+@import 'bootstrap'
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css");*/
+body {
+  background-color: #EDDFFF;
+}
+#links a{
+  color: white;
+}
+#btn a{
+  color: white;
+}
 .center {
      text-align: center;
 }
+.navbar-default {
+  background-image: none;
+  font-family: 'Pacifico';
+  background-color: #DCDCFF;
+}
 .navbar-default .nav {
+  background-image: none;
+  font-family: 'Pacifico';
+  color: white;
+}
+.navbar-nav > li >a{
+  color: white !important;
+}
+.navbar-header {
+  background-image: none;
   font-family: 'Pacifico';
 }
 .navbar-brand {
+     background-image: none;
      font-family: 'Pacifico';
      font-weight: bold;
 }
-.btn-primary, .btn-primary:visited {
-    background-color: #FFCDF6 !important;
+.btn, .btn-primary, .btn-primary:visited {
+    background-image: none;
+    background-color: #FFCDF6;
     border-color: transparent;
     font-family: 'Pacifico';
 }
 .btn-default, .btn-default:visited {
+    background-image: none;
     color: #FFCDF6 !important;
     border-color: transparent;
     font-family: 'Pacifico';
 }
 .btn-primary:hover {
+  background-image: none;
   background-color: #FFA8EF !important;
   border-color: transparent;
 }
-.panel-heading {
-  background-color: #FFCDF6 !important;
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color:white;
+    background-color:#FFCDF6;
+}
+.nav-pills > li.active > a:hover {
+    background-color:#FFCDF6;
+}
+.nav-pills {
+  color: #FFCDF6
+}
+.panel-default {
+  border-color: #DCDCFF !important;
+}
+.panel > .panel-heading {
+  background-image: none;
+  background-color: #DCDCFF !important;
   color: white !important;
   font-family: 'Pacifico';
 }
 .panel-footer {
+  background-image: none;
   background-color: #A6F7FF !important;
-  //height: 67px !important;
+  //height: 500px !important;
 }

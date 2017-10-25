@@ -1,16 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>pxlSite</title>
-
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Bootstrap -->
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/mia.css.scss">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/termlib.js"></script>
+  <!--<script language="JavaScript" type="text/javascript" src="shc.js.php"></script>-->
+  <script language="JavaScript" type="text/javascript" src="js/shell.js"></script>
+  <link href="css/mia.css.scss" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,18 +39,21 @@
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
         </button>
-        <a href="Mia Belmont">Mia Belmont</a>
+
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav" id="links">
+          <li><a href="mia.html">Mia Belmont</a> </li>
+          <!--<li><a href="About">About</a> </li> -->
+        </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="Home">Home</a> </li>
-          <li><a href="About">About</a> </li>
-
+            <li><a href="assets/resume.pdf" download>My Resume</a></li>
+            <li><a href="https://www.linkedin.com/feed/">My Linkedin</a></li>
+            <li><a href="https://github.com/PixelWitch">My Github</a></li>
+          </div>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container -->
@@ -61,18 +75,62 @@
               playing the violin. Although I'm still a novice in both, I love makeup and fashion
               (especially pastels, as you can see).
                     </div>
-                  <div id="footer" class="panel-footer">
-                    <div id = "btn" class="col-sm-offset-2 col-sm-4">
+                  </div>
+                  <div class="box panel panel-default">
+                    <div id= "panel-heading" class="panel-heading">Twitter Feed</div>
+                    <div class="panel-body">
+                      <a class="twitter-timeline" data-height= "500" href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw">Tweets by TwitterDev</a>
                     </div>
+                  </div>
+                </div>
+                <div class="col-sm-offset-0 col-sm-4">
+                  <div class="box panel panel-default" style="width: 700px;">
+                    <div id= "panel-heading" class="panel-heading">Consoles</div>
+                    <div class="panel-body">
+                  <ul  class="nav nav-pills">
+            			<li class="active">
+                    <a  href="#1" data-toggle="tab">Python</a>
+            			</li>
+            			<li><a href="#2" data-toggle="tab">Bash</a>
+            			</li>
+            		</ul>
+
+            			<div class="tab-content clearfix">
+            			  <div class="tab-pane active" id="1">
+                      <div class="panel-body">
+                        <iframe style="width: 640px; height: 480px; border: none;" name="embedded_python_anywhere2" src="https://www.pythonanywhere.com/embedded/"></iframe>
+                      </div>
+            				</div>
+            				<div class="tab-pane" id="2">
+                      <div id="termDiv" style=" visibility: visible;"></div>
+
+                      <script type="text/javascript">
+                         //<![CDATA[
+                          termOpen();
+                         //]]>
+                      </script>
+                    <p>
+                      This console is implemented with the javascript terminal library termlib.js.
+                      Termlib and the invaders game are developed by: (c) Norbert Landsteiner 2003-2007
+                      mass:werk - media environments
+                      <li><a href="http://www.masswerk.at">http://www.masswerk.at</a></li>
+                      The GeoIP location information is provided by "MaxMind"
+                      <li><a href="http://www.maxmind.com">http://www.maxmind.com</a></li>
+                      The weather data is provided by "The Weather Channel Interactive, Inc.
+                      <li><a href="http://www.weather.com">http://www.weather.com</a></li>
+                      The chatbot is adapted from the Alkali Chatbot.
+                      <li><a href="http://www.alkalisoftware.ca">http://www.alkalisoftware.ca</a></li>
+                      The rest of this site <cb.vu> and the additional shell and command code are developed by:
+                        (c) Colin Barschel 2007-2008
+                        c@cb.vu
+                        <li><a href="http://cb.vu">http://cb.vu</a></li>
+                    </p>
+            				</div>
+            			</div>
                   </div>
                   </div>
                 </div>
+    </div>
 
-    </div>
-    </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
